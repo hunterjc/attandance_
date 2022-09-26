@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+    <h1>Your attandance form</h1>
+    <form action="/attandence_student" method="post">
+        <label for="cname">Subject name:</label>
+        <input type="text" id="cname" name="cname"><br><br>
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration"><br><br>
+        <label for="start_time">Start time:</label>
+        <input type="text" name="start_time"><br><br>
+        <label for="Lecturer">Lecturer:</label>
+        <input type="text" name="Lecturer"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <%- include('partials/footer'); -%>

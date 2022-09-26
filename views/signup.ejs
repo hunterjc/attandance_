@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <h1>signup option</h1>
+
+    <form action="/student_signup" method="post">
+        <label for="fname"> name:</label>
+        <input type="text" name="fname"><br><br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required><br><br>
+        <label for="password">password:</label>
+        <input type="password" name="password"><br><br>
+        <label for="password">conferm password:</label>
+        <input type="password" name="conferm_password"><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    <!-- <a href="/routes/home.js">home</a> -->
+    <%- include('partials/footer'); -%>
